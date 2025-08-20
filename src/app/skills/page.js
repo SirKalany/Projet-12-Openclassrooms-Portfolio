@@ -1,9 +1,17 @@
-'use client';
+"use client";
+
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 export default function Skills() {
   return (
-    <main className="flex items-center justify-center min-h-screen bg-gray-800">
-      <h1 className="text-3xl font-bold">Mes compétences 💻</h1>
-    </main>
+    <div className="min-h-screen bg-gray-900 text-white">
+      <Navbar />
+      <main className="pt-24 px-8">
+        <h1 className="text-4xl font-bold">Mes compétences</h1>
+        <p>Liste des compétences techniques…</p>
+      </main>
+      <Footer />
+    </div>
   );
 }
