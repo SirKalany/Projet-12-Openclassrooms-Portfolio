@@ -1,0 +1,9 @@
+[
+  { "name": "HTML5", "level": "Avancé", "logo": "/logos/html5.png" },
+  { "name": "CSS3", "level": "Avancé", "logo": "/logos/css3.png" },
+  { "name": "SASS", "level": "Intermédiaire", "logo": "/logos/sass.png" },
+  { "name": "JavaScript", "level": "Intermédiaire", "logo": "/logos/javascript.png" },
+  { "name": "React", "level": "Intermédiaire", "logo": "/logos/react.png" },
+  { "name": "Next.js", "level": "Débutant", "logo": "/logos/nextjs.png" },
+  { "name": "MongoDB", "level": "Débutant", "logo": "/logos/mongodb.png" }
+]

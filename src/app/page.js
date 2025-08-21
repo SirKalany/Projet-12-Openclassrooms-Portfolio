@@ -13,9 +13,10 @@ export default function Home() {
         <Navbar />
         <main className="flex-1 text-white">
           {/* Présentation */}
-          <section 
-          className="min-h-screen flex flex-col justify-center px-8 max-w-3xl space-y-6"
-          style={{ backgroundImage: "url('/bg.jpg')" }}
+          <section
+            id="intro"
+            className="min-h-screen flex flex-col justify-center px-8 max-w-3xl space-y-6"
+            style={{ backgroundImage: "url('/bg.jpg')" }}
           >
             <h2 className="text-4xl font-bold">Présentation</h2>
             <p>
@@ -24,15 +25,19 @@ export default function Home() {
             </p>
           </section>
           {/* Projets */}
-          <section 
-          className="min-h-screen flex flex-col justify-center px-8 max-w-3xl space-y-6"
-          style={{ backgroundImage: "url('/bg.jpg')" }}
+          <section
+            id="projects"
+            className="min-h-screen flex flex-col justify-center px-8 max-w-3xl space-y-6"
+            style={{ backgroundImage: "url('/bg.jpg')" }}
           >
             <h2 className="text-4xl font-bold">Projets</h2>
             <p>Un aperçu de mes projets réalisés…</p>
           </section>
           {/* Compétences */}
-          <section className="min-h-screen flex flex-col justify-center px-8 max-w-3xl space-y-6">
+          <section
+            id="skills"
+            className="min-h-screen flex flex-col justify-center px-8 max-w-3xl space-y-6"
+          >
             <h2 className="text-4xl font-bold">Compétences</h2>
             <p>
               Découvrez mes compétences principales →
@@ -42,7 +47,10 @@ export default function Home() {
             </p>
           </section>
           {/* Contact */}
-          <section className="min-h-screen flex flex-col justify-center items-center text-center px-8 space-y-6">
+          <section
+            id="contact"
+            className="min-h-screen flex flex-col justify-center items-center text-center px-8 space-y-6"
+          >
             <h2 className="text-4xl font-bold">Contact</h2>
             <Link
               href="/contact"

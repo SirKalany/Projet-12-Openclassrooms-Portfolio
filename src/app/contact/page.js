@@ -8,7 +8,7 @@ export default function Contact() {
     <div className="relative min-h-screen bg-gray-900 text-white flex flex-col">
       <Navbar />
 
-      <main className="flex-1 flex justify-center items-center px-4">
+      <main className="flex-1 flex justify-center px-4 mt-19">
         <form
           action="mailto:duncan.miard@outlook.fr"
           method="POST"
