@@ -4,8 +4,9 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ContactModal from "../components/ContactModal";
+import ProjectCarousel from "../components/ProjectCarousel";
 import { useDispatch } from "react-redux";
-import { openContact } from "./store/slices/modalSlice";
+import { openContact } from "../app/store/slices/modalSlice";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -30,15 +31,17 @@ export default function Home() {
               passionné par Next.js, Tailwind et le design moderne.
             </p>
           </section>
+
           {/* Projets */}
           <section
             id="projects"
-            className="min-h-screen flex flex-col justify-center px-8 max-w-3xl space-y-6"
+            className="min-h-screen flex flex-col justify-center px-8 max-w-5xl space-y-6"
             style={{ backgroundImage: "url('/bg.jpg')" }}
           >
-            <h2 className="text-4xl font-bold">Projets</h2>
-            <p>Un aperçu de mes projets réalisés…</p>
+            <h2 className="text-4xl font-bold text-center">Projets</h2>
+            <ProjectCarousel />
           </section>
+
           {/* Compétences */}
           <section
             id="skills"
@@ -53,6 +56,7 @@ export default function Home() {
             </p>
           </section>
 
+          {/* Contact */}
           <section
             id="contact"
             className="min-h-screen flex flex-col justify-center items-center text-center px-8 space-y-6"
@@ -66,8 +70,10 @@ export default function Home() {
             </button>
           </section>
         </main>
+
         <Footer />
       </div>
+
       <ContactModal />
     </div>
   );

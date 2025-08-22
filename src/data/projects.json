@@ -1,3 +1,16 @@
 [
-  { "name": "HTML5", "picture": "Avancé", "description": "Avancé", "skills": "/logos/html5.png", "link": "/logos/html5.png" }
+  {
+    "name": "Argent Bank",
+    "description": "Mon site perso réalisé avec Next.js et Tailwind.",
+    "picture": "/projects/argentbank.jpg",
+    "skills": ["/logos/html5.png", "/logos/css3.png", "/logos/react.png"],
+    "link": "https://monportfolio.com"
+  },
+  {
+    "name": "Sophie Bluel",
+    "description": "Blog tech en React avec gestion de contenu via Markdown.",
+    "picture": "/projects/sophiebluel.jpg",
+    "skills": ["/logos/react.png", "/logos/sass.png"],
+    "link": "https://monblog.com"
+  }
 ]
