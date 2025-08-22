@@ -1,16 +1,22 @@
 "use client";
 
+import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Link from "next/link";
+import ContactModal from "../components/ContactModal";
+import { useDispatch } from "react-redux";
+import { openContact } from "./store/slices/modalSlice";
 
 export default function Home() {
+  const dispatch = useDispatch();
+
   return (
     <div className="relative min-h-screen bg-cover bg-center">
       <div className="absolute inset-0 bg-black/60" />
-      {/* Contenu */}
+
       <div className="relative z-10 flex flex-col min-h-screen">
         <Navbar />
+
         <main className="flex-1 text-white">
           {/* Présentation */}
           <section
@@ -46,22 +52,23 @@ export default function Home() {
               </Link>
             </p>
           </section>
-          {/* Contact */}
+
           <section
             id="contact"
             className="min-h-screen flex flex-col justify-center items-center text-center px-8 space-y-6"
           >
             <h2 className="text-4xl font-bold">Contact</h2>
-            <Link
-              href="/contact"
+            <button
+              onClick={() => dispatch(openContact())}
               className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition"
             >
               Me contacter
-            </Link>
+            </button>
           </section>
         </main>
         <Footer />
       </div>
+      <ContactModal />
     </div>
   );
 }
