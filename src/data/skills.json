@@ -1,9 +1,14 @@
 [
+  { "name": "VSCode", "level": "Avancé", "logo": "/logos/vscode.png" },
+  { "name": "Node", "level": "Intermédiaire", "logo": "/logos/node.png" },
   { "name": "HTML5", "level": "Avancé", "logo": "/logos/html5.png" },
   { "name": "CSS3", "level": "Avancé", "logo": "/logos/css3.png" },
   { "name": "SASS", "level": "Intermédiaire", "logo": "/logos/sass.png" },
   { "name": "JavaScript", "level": "Intermédiaire", "logo": "/logos/javascript.png" },
   { "name": "React", "level": "Intermédiaire", "logo": "/logos/react.png" },
   { "name": "Next.js", "level": "Débutant", "logo": "/logos/nextjs.png" },
-  { "name": "MongoDB", "level": "Débutant", "logo": "/logos/mongodb.png" }
+  { "name": "MongoDB", "level": "Débutant", "logo": "/logos/mongodb.png" },
+  { "name": "Vite", "level": "Intermédiaire", "logo": "/logos/vite.png" },
+  { "name": "Redux", "level": "Débutant", "logo": "/logos/redux.png" },
+  { "name": "Typescript", "level": "Débutant", "logo": "/logos/typescript.png" }
 ]

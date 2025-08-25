@@ -11,42 +11,53 @@ import { openContact } from "../app/store/slices/modalSlice";
 export default function Home() {
   const dispatch = useDispatch();
 
-  return (
-    <div className="relative min-h-screen bg-cover bg-center">
-      <div className="absolute inset-0 bg-black/60" />
+  // Composant réutilisable pour sections avec background + overlay
+  const Section = ({ id, bg, children, alignItems = "items-center" }) => (
+    <section
+      id={id}
+      className={`relative min-h-screen w-full flex flex-col justify-center ${alignItems} bg-cover bg-center`}
+      style={{
+        backgroundImage: `url('${bg}')`,
+      }}
+    >
+      {/* Overlay sombre global */}
+      <div className="absolute inset-0 bg-black/40" />
 
+      {/* Dégradé haut/bas */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
+
+      {/* Contenu */}
+      <div className="relative z-10 px-8 max-w-5xl text-white text-center space-y-6">
+        {children}
+      </div>
+    </section>
+  );
+
+  return (
+    <div className="relative min-h-screen bg-black">
       <div className="relative z-10 flex flex-col min-h-screen">
         <Navbar />
 
         <main className="flex-1 text-white">
           {/* Présentation */}
-          <section
-            id="intro"
-            className="min-h-screen flex flex-col justify-center px-8 max-w-3xl space-y-6"
-            style={{ backgroundImage: "url('/bg.jpg')" }}
-          >
+          <Section id="intro" bg="/backgrounds/backgroundintro.jpg">
             <h2 className="text-4xl font-bold">Présentation</h2>
             <p>
               Bonjour, je suis <strong>Duncan Miard</strong>, développeur
               passionné par Next.js, Tailwind et le design moderne.
             </p>
-          </section>
+          </Section>
 
           {/* Projets */}
-          <section
-            id="projects"
-            className="min-h-screen flex flex-col justify-center px-8 max-w-5xl space-y-6"
-            style={{ backgroundImage: "url('/bg.jpg')" }}
-          >
-            <h2 className="text-4xl font-bold text-center">Projets</h2>
-            <ProjectCarousel />
-          </section>
+          <Section id="projects" bg="/backgrounds/backgroundproject.jpg">
+            <div>
+              <h2 className="text-4xl font-bold mb-8">Projets</h2>
+              <ProjectCarousel />
+            </div>
+          </Section>
 
           {/* Compétences */}
-          <section
-            id="skills"
-            className="min-h-screen flex flex-col justify-center px-8 max-w-3xl space-y-6"
-          >
+          <Section id="skills" bg="/backgrounds/backgroundskills.jpg">
             <h2 className="text-4xl font-bold">Compétences</h2>
             <p>
               Découvrez mes compétences principales →
@@ -54,13 +65,10 @@ export default function Home() {
                 Voir plus
               </Link>
             </p>
-          </section>
+          </Section>
 
           {/* Contact */}
-          <section
-            id="contact"
-            className="min-h-screen flex flex-col justify-center items-center text-center px-8 space-y-6"
-          >
+          <Section id="contact" bg="/backgrounds/backgroundcontact.jpg">
             <h2 className="text-4xl font-bold">Contact</h2>
             <button
               onClick={() => dispatch(openContact())}
@@ -68,7 +76,7 @@ export default function Home() {
             >
               Me contacter
             </button>
-          </section>
+          </Section>
         </main>
 
         <Footer />

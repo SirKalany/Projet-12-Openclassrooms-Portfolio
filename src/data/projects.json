@@ -1,16 +1,23 @@
 [
   {
     "name": "Argent Bank",
-    "description": "Mon site perso réalisé avec Next.js et Tailwind.",
+    "description": "Site de banque, utilisation de React et manipulation API",
     "picture": "/projects/argentbank.jpg",
-    "skills": ["/logos/html5.png", "/logos/css3.png", "/logos/react.png"],
-    "link": "https://monportfolio.com"
+    "skills": ["/logos/mongodb.png", "/logos/node.png", "/logos/react.png"],
+    "link": "https://github.com/SirKalany/Projet-10-Openclassrooms-ArgentBank"
   },
   {
     "name": "Sophie Bluel",
-    "description": "Blog tech en React avec gestion de contenu via Markdown.",
+    "description": "Blog de Sophie Bluel, utilisation de JavaScript et Backend pour connexion",
     "picture": "/projects/sophiebluel.jpg",
     "skills": ["/logos/react.png", "/logos/sass.png"],
-    "link": "https://monblog.com"
+    "link": "https://github.com/SirKalany/Projet-6-Openclassrooms-Sophie-Bluel"
+  },
+  {
+    "name": "724 events",
+    "description": "Blog de 724 events, debugging et optimisation de site",
+    "picture": "/projects/724events.jpg",
+    "skills": ["/logos/javascript.png", "/logos/sass.png", "/logos/vscode.png"],
+    "link": "https://github.com/SirKalany/Projet-9-Openclassrooms-724events"
   }
 ]
