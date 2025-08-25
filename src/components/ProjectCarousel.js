@@ -8,37 +8,19 @@ import Link from "next/link";
 export default function ProjectCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = () => {
+  const nextSlide = () =>
     setCurrentIndex((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
-  };
-
-  const prevSlide = () => {
+  const prevSlide = () =>
     setCurrentIndex((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
-  };
-
   const goToSlide = (index) => setCurrentIndex(index);
 
   const currentProject = projects[currentIndex];
 
   return (
     <div className="w-full max-w-5xl mx-auto px-4">
-      <div className="relative flex flex-col items-center">
-        {/* Flèches */}
-        <button
-          onClick={prevSlide}
-          className="absolute left-2 md:left-0 top-1/2 transform -translate-y-1/2 z-20 bg-black/60 hover:bg-black/80 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl transition"
-        >
-          &lt;
-        </button>
-
-        <button
-          onClick={nextSlide}
-          className="absolute right-2 md:right-0 top-1/2 transform -translate-y-1/2 z-20 bg-black/60 hover:bg-black/80 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl transition"
-        >
-          &gt;
-        </button>
-
-        {/* Image */}
+      <div className="flex flex-col items-center">
+        
+        {/* Image et flèches */}
         <div className="relative w-full max-h-[70vh] mb-6">
           <Image
             src={currentProject.picture}
@@ -48,6 +30,21 @@ export default function ProjectCarousel() {
             className="rounded-lg shadow-lg mx-auto w-full h-auto object-contain"
             priority
           />
+
+          {/* Flèches */}
+          <button
+            onClick={prevSlide}
+            className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl transition"
+          >
+            &lt;
+          </button>
+
+          <button
+            onClick={nextSlide}
+            className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl transition"
+          >
+            &gt;
+          </button>
         </div>
 
         {/* Informations */}

@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  trailingSlash: true, // nécessaire pour GitHub Pages
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
