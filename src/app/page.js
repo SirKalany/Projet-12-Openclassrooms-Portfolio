@@ -25,6 +25,7 @@ export default function Home() {
             alignItems="items-start"
             textAlign="text-left"
             maxWidth="max-w-xl m-[5%]"
+            className="scroll-mt-24" // <-- ajoute cette classe
           >
             <div className="intro-text">
               <h2
@@ -44,10 +45,10 @@ export default function Home() {
                 }}
               >
                 Bonjour, je suis <strong>Duncan Miard</strong>, développeur
-                front-end issu d&apos;une formation d&apos;intégrateur web. Passionné par
-                l&apos;UI/UX et les technologies modernes comme Next.js et
-                TailwindCSS, je conçois des interfaces claires, accessibles et
-                performantes.
+                front-end issu d&apos;une formation d&apos;intégrateur web.
+                Passionné par l&apos;UI/UX et les technologies modernes comme
+                Next.js et TailwindCSS, je conçois des interfaces claires,
+                accessibles et performantes.
                 <br />
                 <br />
                 Mon objectif est de devenir <strong>fullstack</strong> grâce à
