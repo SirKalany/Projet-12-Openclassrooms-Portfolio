@@ -19,7 +19,6 @@ export default function ProjectCarousel() {
   return (
     <div className="w-full max-w-5xl mx-auto px-4">
       <div className="flex flex-col items-center">
-        
         {/* Image et flèches */}
         <div className="relative w-full max-h-[70vh] mb-6">
           <Image
@@ -71,19 +70,18 @@ export default function ProjectCarousel() {
             ))}
           </div>
 
-          {/* Bouton projet */}
           <div className="flex justify-center">
             <Link
               href={currentProject.link}
               target="_blank"
-              className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition text-sm md:text-base"
+              className="bg-gray-700 text-white px-6 py-3 rounded-lg hover:bg-gray-600 transition text-sm md:text-base"
             >
               Voir le projet
             </Link>
           </div>
         </div>
 
-        {/* Dots */}
+        {/* Points */}
         <div className="flex justify-center space-x-2 mt-6">
           {projects.map((_, index) => (
             <button
@@ -91,8 +89,8 @@ export default function ProjectCarousel() {
               onClick={() => goToSlide(index)}
               className={`w-3 h-3 rounded-full transition-all duration-200 ${
                 index === currentIndex
-                  ? "bg-blue-500 scale-110"
-                  : "bg-gray-400 hover:bg-gray-300"
+                  ? "bg-white scale-110"
+                  : "bg-gray-700 hover:bg-gray-300"
               }`}
             />
           ))}
