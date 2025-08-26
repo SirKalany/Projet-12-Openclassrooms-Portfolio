@@ -24,7 +24,7 @@ export default function Home() {
             bg="/backgrounds/backgroundintro.jpg"
             alignItems="items-start"
             textAlign="text-left"
-            maxWidth="max-w-xl ml-[5%]"
+            maxWidth="max-w-xl m-[5%]"
           >
             <div className="intro-text">
               <h2
