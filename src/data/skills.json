@@ -10,5 +10,9 @@
   { "name": "MongoDB", "level": "Débutant", "logo": "/logos/mongodb.png" },
   { "name": "Vite", "level": "Intermédiaire", "logo": "/logos/vite.png" },
   { "name": "Redux", "level": "Débutant", "logo": "/logos/redux.png" },
-  { "name": "Typescript", "level": "Débutant", "logo": "/logos/typescript.png" }
+  { "name": "Typescript", "level": "Débutant", "logo": "/logos/typescript.png" },
+  { "name": "Java", "level": "Débutant", "logo": "/logos/java.png" },
+  { "name": "Postman", "level": "Intermédiaire", "logo": "/logos/postman.png" },
+  { "name": "Spring Boot", "level": "Débutant", "logo": "/logos/spring.png" },
+  { "name": "PostgreSQL", "level": "Débutant", "logo": "/logos/postgresql.png" }
 ]

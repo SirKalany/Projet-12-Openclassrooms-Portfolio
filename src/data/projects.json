@@ -19,5 +19,12 @@
     "picture": "/projects/724events.jpg",
     "skills": ["/logos/javascript.png", "/logos/sass.png", "/logos/vscode.png"],
     "link": "https://github.com/SirKalany/Projet-9-Openclassrooms-724events"
+  },
+  {
+    "name": "Strife",
+    "description": "Encyclopédie consacrée aux armements utilisés par les différents pays à travers l'histoire.",
+    "picture": "/projects/strife.jpg",
+    "skills": ["/logos/java.png", "/logos/postgresql.png", "/logos/spring.png"],
+    "link": "https://github.com/SirKalany/strife-front/tree/main"
   }
 ]
